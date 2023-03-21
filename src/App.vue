@@ -7,36 +7,6 @@
             <div class="card" style="background-color:#6cd99bff">
                 <time datetime="">
                     {{
-                        new Date('2023-02-24')
-                        .toLocaleDateString([], {
-                        year: 'numeric',
-                        month: '2-digit',
-                        day: '2-digit'
-                        })
-                    }}
-                </time>
-                <p>
-                    Preview
-                </p>
-            </div>
-            <div class="card" style="background-color:#6cd99bff">
-                <time datetime="">
-                    {{
-                        new Date('2023-02-24')
-                        .toLocaleDateString([], {
-                        year: 'numeric',
-                        month: '2-digit',
-                        day: '2-digit'
-                        })
-                    }}
-                </time>
-                <p>
-                    Connect to GitHub
-                </p>
-            </div>
-            <div class="card" style="background-color:#6cd99bff">
-                <time datetime="">
-                    {{
                         new Date('2023-02-25')
                         .toLocaleDateString([], {
                         year: 'numeric',
