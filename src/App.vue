@@ -127,25 +127,10 @@
                     Stable release
                 </p>
             </div>
-            <div class="card" style="background-color:#e4e6a5ff">
-                <time datetime="">
-                    {{
-                        new Date('2023-06-01')
-                        .toLocaleDateString([], {
-                        year: 'numeric',
-                        month: '2-digit',
-                        day: '2-digit'
-                        })
-                    }}
-                </time>
-                <p>
-                    Stable release
-                </p>
-            </div>
         </div>
         <div style="width:100%;z-index:0;margin-top:-40px;height:140px;position:relative;background:radial-gradient(circle, rgba(174,201,102,1) 0%, rgba(126,173,62,1) 100%);border-top-width:1px;border-color:#d7fa91ff;border-style:solid;border-bottom-width:0px;border-right-width:0px;border-left-width:0px">
             <div style="position:absolute;width:100%;bottom:-200px;top:100%;background:linear-gradient(353deg, rgba(88,88,88,1) 0%, rgba(56,56,56,1) 100%);text-align:center;color:#f5f5f5ff;padding-top:100px">
-                <img src="@/assets/jsComponent.png" style="width:335;height:auto;margin-bottom:40px;margin-left:35px;box-sizing:border-box;display:inline-block;position:relative;margin-top:-60px" /> <span style="display:block;margin-bottom:35px">
+                <img src="@/assets/jsComponent.png" style="width:335px;height:auto;margin-bottom:40px;margin-left:35px;box-sizing:border-box;display:inline-block;position:relative;margin-top:-60px" /> <span style="display:block;margin-bottom:35px">
                     © Siglar Development AS
                     - All rights reserved
                     {{new Date().getFullYear()}}
