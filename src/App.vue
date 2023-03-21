@@ -16,7 +16,7 @@
                     }}
                 </time>
                 <p>
-                    npm publish wizard, use favicon as preview image
+                    comp prev img
                 </p>
             </div>
             <div class="card" style="background-color:#424242ff;color:#fafafaff">
