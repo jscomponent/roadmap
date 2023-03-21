@@ -1,21 +1,31 @@
 import fs from 'fs'
-import { fileURLToPath, URL } from 'url'
-import { defineConfig } from 'vite'
+import {
+    fileURLToPath,
+    URL
+} from 'url'
+import {
+    defineConfig
+} from 'vite'
 import vue from '@vitejs/plugin-vue'
 import dataUri from '@rollup/plugin-data-uri'
-import { urlResolver } from '@jscomponent/rollup'
+import {
+    urlResolver
+} from '@jscomponent/rollup'
 
-if (fs.existsSync('./cache')) fs.rmSync('./cache', { recursive: true })
+if (fs.existsSync('./cache')) fs.rmSync('./cache', {
+    recursive: true
+})
 
 export default defineConfig({
-  plugins: [vue(), urlResolver(), dataUri()],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+    base: process.env.BASE,
+    plugins: [vue(), urlResolver(), dataUri()],
+    resolve: {
+        alias: {
+            '@': fileURLToPath(new URL('./src', import.meta.url))
+        },
+        extensions: ['.vue', '.tsx', '.ts', '.mjs', '.js', '.jsx', '.json', '.wasm']
     },
-    extensions: ['.vue', '.tsx', '.ts', '.mjs', '.js', '.jsx', '.json', '.wasm']
-  },
-  define: {
-    '{}': {}
-  }
+    define: {
+        '{}': {}
+    }
 })
