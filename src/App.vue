@@ -1,10 +1,10 @@
 <template>
     <div>
-        <h2 style="font-family:'Kolker Brush', cursive;font-size:80px;margin-bottom:20px;color:#404040ff;box-sizing:border-box;display:block;margin-top:80px">
+        <h2 style="font-family:'Kolker Brush', cursive;font-size:80px;margin-bottom:20px;color:#404040ff;box-sizing:border-box;display:block;margin-top:80px;height:106px">
             Roadmap
         </h2>
         <div style="width:25px;margin-right:auto;margin-left:auto;background-color:#242424ff;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-left-radius:4px;border-bottom-right-radius:4px;padding-top:10px;padding-bottom:160px;z-index:1;position:relative">
-            <div class="card" style="background-color:#6cd99bff">
+            <div class="card" style="background-color:#6cd99bff;width:329.216px;height:170.365px">
                 <time datetime="">
                     {{
                         new Date('2023-02-25')
@@ -16,8 +16,18 @@
                     }}
                 </time>
                 <p>
-                    comp prev img
+                    comp prev img {{test}} {{test2}}
                 </p>
+                <p>
+                    {{tester}} {{demo}} {{multi.level}}
+                </p>
+                <slot /><input v-model="test" style="height:46px" /><input v-model="test2" style="height:46px" /><input v-model="multi.level" /><button type="" @click="test3()">
+                    click
+                </button><button type="" @click="test2++">
+                    click2
+                </button><button type="" @click="test=test2">
+                    click3
+                </button>
             </div>
             <div class="card" style="background-color:#424242ff;color:#fafafaff">
                 <time datetime="">
@@ -140,7 +150,32 @@
     </div>
 </template>
 <script>
-    export default {};
+    export default {
+        data: () => ({
+            test: "hellosan",
+            test2: 0,
+            tester: "hey",
+            multi: {
+                level: "hoho"
+            }
+        }),
+        watch: {
+            test(val, old) {
+                console.log("val changed", val);
+                this.test2++
+            }
+        },
+        methods: {
+            test3() {
+                this.test = this.test2++
+            }
+        },
+        computed: {
+            demo() {
+                return "yola"
+            }
+        }
+    };
 </script>
 <style scoped>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
