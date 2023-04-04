@@ -4,7 +4,7 @@
             Roadmap
         </h2>
         <div style="width:25px;margin-right:auto;margin-left:auto;background-color:#242424ff;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-left-radius:4px;border-bottom-right-radius:4px;padding-top:10px;padding-bottom:160px;z-index:1;position:relative">
-            <div class="card" style="background-color:#6cd99bff;width:329.216px;height:170.365px">
+            <div class="card" style="background-color:#6cd99bff;width:369.003px;height:184.047px">
                 <time datetime="">
                     {{
                         new Date('2023-02-25')
@@ -21,12 +21,12 @@
                 <p>
                     {{tester}} {{demo}} {{multi.level}}
                 </p>
-                <slot /><input v-model="test" style="height:46px" /><input v-model="test2" style="height:46px" /><input v-model="multi.level" /><button type="" @click="test3()">
+                <slot /><input v-model="test" style="height:46px" /><input v-model="test" style="height:46px" /><input v-model="test2" style="height:46px" /><input v-model="multi.level" /><button type="" @click="test+=1">
                     click
+                </button><button type="" @click="test=123">
+                    click3
                 </button><button type="" @click="test2++">
                     click2
-                </button><button type="" @click="test = 123">
-                    click3
                 </button>
             </div>
             <div class="card" style="background-color:#424242ff;color:#fafafaff">
