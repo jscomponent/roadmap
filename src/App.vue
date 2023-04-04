@@ -100,9 +100,6 @@
                         })
                     }}
                 </time>
-                <header>
-                    Anitas bursdag ❤️
-                </header>
                 <p>
                     Beta announcement
                 </p>
