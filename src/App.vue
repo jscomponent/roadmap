@@ -25,7 +25,7 @@
                     click
                 </button><button type="" @click="test2++">
                     click2
-                </button><button type="" @click="test=test2">
+                </button><button type="" @click="$router.push('/')">
                     click3
                 </button>
             </div>
