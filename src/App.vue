@@ -4,7 +4,7 @@
             Roadmap
         </h2>
         <div style="width:25px;margin-right:auto;margin-left:auto;background-color:#242424ff;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-left-radius:4px;border-bottom-right-radius:4px;padding-top:10px;padding-bottom:160px;z-index:1;position:relative">
-            <div class="card" style="background-color:#6cd99bff;width:369.003px;height:184.047px">
+            <div class="card" style="background-color:#6cd99bff;width:389.919px;height:184.642px">
                 <time datetime="">
                     {{
                         new Date('2023-02-25')
@@ -107,7 +107,7 @@
                     Beta announcement
                 </p>
             </div>
-            <div class="card">
+            <div class="card" style="width:300.328px;height:106.278px">
                 <time datetime="">
                     {{
                         new Date('2023-05-01')
@@ -140,7 +140,8 @@
         </div>
         <div style="width:100%;z-index:0;margin-top:-40px;height:140px;position:relative;background:radial-gradient(circle, rgba(174,201,102,1) 0%, rgba(126,173,62,1) 100%);border-top-width:1px;border-color:#d7fa91ff;border-style:solid;border-bottom-width:0px;border-right-width:0px;border-left-width:0px">
             <div style="position:absolute;width:100%;bottom:-200px;top:100%;background:linear-gradient(353deg, rgba(88,88,88,1) 0%, rgba(56,56,56,1) 100%);text-align:center;color:#f5f5f5ff;padding-top:100px">
-                <img src="@/assets/jsComponent.png" style="width:335px;height:auto;margin-bottom:40px;margin-left:35px;box-sizing:border-box;display:inline-block;position:relative;margin-top:-60px" /> <span style="display:block;margin-bottom:35px">
+                <div style="width:386px;height:79px;margin-right:auto;margin-left:auto;margin-top:-70px;margin-bottom:30px" class="logo">
+                </div> <span style="display:block;margin-bottom:35px">
                     © Siglar Development AS
                     - All rights reserved
                     {{new Date().getFullYear()}}
@@ -240,6 +241,11 @@
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
         border-left-width: 0px;
+    }
+
+    .logo {
+        background-image: url(@/assets/jsComponent.png);
+        background-size: cover;
     }
 </style>
 <style>
