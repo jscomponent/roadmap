@@ -79,21 +79,6 @@
                     Beta announcement
                 </p>
             </div>
-            <div class="card" style="width:300.328px;height:106.278px">
-                <time datetime="">
-                    {{
-                        new Date('2023-05-01')
-                        .toLocaleDateString([], {
-                        year: 'numeric',
-                        month: '2-digit',
-                        day: '2-digit'
-                        })
-                    }}
-                </time>
-                <p>
-                    Demo components & bugfix
-                </p>
-            </div>
             <div class="card" style="background-color:#e4e6a5ff">
                 <time datetime="">
                     {{
