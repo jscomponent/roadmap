@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2 style="font-family:'Kolker Brush', cursive;font-size:80px;margin-bottom:20px;color:#404040ff;box-sizing:border-box;display:block;margin-top:80px;height:106px">
+        <h2 style="font-family:Bangers;font-size:80px;margin-bottom:20px;color:#404040ff;box-sizing:border-box;display:block;margin-top:80px;height:106px">
             Roadmap
         </h2>
         <div style="width:25px;margin-right:auto;margin-left:auto;background-color:#242424ff;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-left-radius:4px;border-bottom-right-radius:4px;padding-top:10px;padding-bottom:160px;z-index:1;position:relative">
@@ -136,9 +136,7 @@
     };
 </script>
 <style scoped>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
-
-    @import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
     .card:nth-child(2n) {
         margin-left: -141px;
